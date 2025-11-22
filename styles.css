@@ -104,8 +104,25 @@ body {
 
 .hero-buttons {
     display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.app-store-button-wrapper {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.secondary-buttons {
+    display: flex;
     gap: 20px;
     flex-wrap: wrap;
+}
+
+.secondary-buttons .btn {
+    padding: 12px 24px;
+    font-size: 14px;
 }
 
 .btn {
@@ -151,6 +168,27 @@ body {
 .btn-icon {
     margin-right: 8px;
     font-size: 20px;
+}
+
+.btn-icon-svg {
+    margin-right: 8px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.app-store-badge {
+    display: inline-block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.app-store-badge img {
+    height: 60px;
+    width: auto;
+}
+
+.app-store-badge:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
 }
 
 .hero-image {
@@ -367,6 +405,14 @@ body {
     }
     
     .hero-buttons {
+        align-items: center;
+    }
+    
+    .app-store-button-wrapper {
+        justify-content: center;
+    }
+    
+    .secondary-buttons {
         justify-content: center;
     }
     
